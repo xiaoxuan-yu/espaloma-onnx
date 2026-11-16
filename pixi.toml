@@ -12,6 +12,8 @@ numpy = "<2"
 torchdata = "==0.7.1"
 setuptools = "<81"
 onnx = ">=1.15,<1.18"
+patchelf = "==0.19.3"
 
 [tasks]
-export = "python scripts/export_model.py"
+prepare-export = "python scripts/prepare_export.py"
+export = {cmd = "python scripts/export_model.py", depends-on = ["prepare-export"]}

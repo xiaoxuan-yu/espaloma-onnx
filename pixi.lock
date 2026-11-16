@@ -160,6 +160,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/orc-2.0.2-h669347b_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/pandas-1.4.4-py310h769672d_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/parmed-4.3.1-py310hc559de4_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/patchelf-0.19.3-hee9eb32_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/pcre2-10.49-h8b3dc9c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/perl-5.44.0-1_h7cc23a3_perl5.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/pillow-12.0.0-py310h049bd52_1.conda
@@ -2855,6 +2856,18 @@ packages:
   run_exports: {}
   size: 19380840
   timestamp: 1777536108455
+- conda: https://conda.anaconda.org/conda-forge/linux-64/patchelf-0.19.3-hee9eb32_0.conda
+  sha256: 7da285de77a135989c68f0ecc12ea90532ae93235604f0a8852c64eec018c649
+  md5: f5aebd2e337f70a4c5165b3318717011
+  depends:
+  - libstdcxx >=15
+  - libgcc >=15
+  - __glibc >=2.17,<3.0.a0
+  license: GPL-3.0-or-later
+  license_family: GPL
+  run_exports: {}
+  size: 153872
+  timestamp: 1793409194884
 - conda: https://conda.anaconda.org/conda-forge/linux-64/pcre2-10.49-h8b3dc9c_0.conda
   sha256: 63784a2dd0231cf8944b31a781b4ebab48954a94cd455d13585874370e46b658
   md5: db724d35be3a1c7b6cd49b7a03de4027
