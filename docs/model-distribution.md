@@ -6,9 +6,8 @@ Distribute the model together with its inference code, requirements, model card,
 
 ```bash
 sha256sum -c SHA256SUMS
-python -m pip install -r requirements.txt
-python examples/predict.py
-python tests/test_runtime.py
+python -m pip install espaloma-onnx
+espaloma-onnx CCO --model .
 ```
 
 The runtime test checks SMILES inference, charge conservation, exact preprocessing inputs and numerical agreement with an original DGL reference fixture. See validation/ for expanded results and the model card for test scope.

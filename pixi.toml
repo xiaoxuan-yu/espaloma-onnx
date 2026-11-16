@@ -1,23 +1,17 @@
 [workspace]
-name = "espaloma-benchmark"
-channels = ["pytorch", "nvidia", "dglteam/label/cu121", "conda-forge"]
+name = "espaloma-export"
+channels = ["conda-forge"]
 platforms = ["linux-64"]
-
-[system-requirements]
-cuda = "12.1"
 
 [dependencies]
 python = "3.10.*"
 espaloma = "==0.3.2"
-dgl = { version = "==2.1.0.cu121", channel = "dglteam/label/cu121" }
-pytorch = { version = "==2.1.2", channel = "pytorch" }
-pytorch-cuda = "12.1.*"
-cuda-version = "12.1.*"
+dgl = "==2.3.0"
+pytorch = {version = "==2.3.1", build = "cpu*"}
 numpy = "<2"
 torchdata = "==0.7.1"
 setuptools = "<81"
 onnx = ">=1.15,<1.18"
-onnxruntime = ">=1.17,<1.21"
 
 [tasks]
 export = "python scripts/export_model.py"

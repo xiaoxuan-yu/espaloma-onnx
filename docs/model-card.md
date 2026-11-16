@@ -16,32 +16,24 @@ An FP32 ONNX conversion of the Espaloma 0.3.2 force-field parameter assignment m
 
 ## Quick start
 
-Download the repository and install the runtime dependencies with Python 3.10:
+Download this model repository, then install the runtime package with Python 3.10:
 
 ```bash
-python -m venv .venv
-. .venv/bin/activate
-python -m pip install -r requirements.txt
-python inference.py 'CCO'
-python examples/predict.py
-python tests/test_runtime.py
+pip install espaloma-onnx
+espaloma-onnx CCO --model /path/to/model-repository
 ```
 
-The runtime uses RDKit for molecular preprocessing, NumPy for input arrays, and ONNX Runtime for CPU inference. Create one `Predictor` and reuse it across requests:
+The package source and wheel build instructions are maintained at https://github.com/xiaoxuan-yu/espaloma-onnx . Runtime dependencies are RDKit, NumPy and ONNX Runtime.
 
 ```python
-from inference import Predictor, prepare
-predict = Predictor('model.onnx', threads=8)  # retain this session
-smiles = 'CCO'
-feed = prepare(smiles)
-parameters = predict(smiles)
-print(parameters['n1_q'])
-print(feed['indices_2'], parameters['n2_eq'])
+from espaloma_onnx import Predictor
+predict = Predictor.from_pretrained('/path/to/model-repository', threads=8)
+result = predict('CCO')
+print(result.parameters['n1_q'])
+print(result.indices['indices_2'], result.parameters['n2_eq'])
 ```
 
-## Python package
-
-Install the package from PyPI after its release: `pip install espaloma-onnx`. Source and installation instructions: https://github.com/xiaoxuan-yu/espaloma-onnx . The repository-local inference.py remains available for direct use.
+Optional `hf` and `modelscope` package extras support cached model-ID downloads and revision pinning. The model repository distributes weights and metadata; the GitHub repository provides versioned runtime code and portable tests.
 
 ## Inputs and outputs
 
