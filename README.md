@@ -19,7 +19,45 @@ print(result.parameters["n1_q"])
 print(result.indices["indices_2"])
 ```
 
-Optional download integrations: `uv sync --extra hf` or `uv sync --extra modelscope`; load `Predictor.from_pretrained("youmans/espaloma-onnx", source="huggingface", revision="version-tag")` (or source="modelscope"). Remote models must exist at the selected revision. Local paths work without either SDK.
+### Load from Hugging Face
+
+```bash
+uv sync --extra hf
+```
+
+```python
+from espaloma_onnx import Predictor
+
+predict = Predictor.from_pretrained(
+    "youmans/espaloma-onnx",
+    source="huggingface",
+    revision="v0.1.0",
+    threads=8,
+)
+result = predict("CCO")
+print(result.parameters["n1_q"])
+```
+
+### Load from ModelScope
+
+```bash
+uv sync --extra modelscope
+```
+
+```python
+from espaloma_onnx import Predictor
+
+predict = Predictor.from_pretrained(
+    "youmans/espaloma-onnx",
+    source="modelscope",
+    revision="v0.1.0",
+    threads=8,
+)
+result = predict("CCO")
+print(result.parameters["n1_q"])
+```
+
+Both downloaders cache model files locally. Set `cache_dir` to choose the cache location or `local_files_only=True` to use cached files offline. Retain the Predictor instance across requests.
 
 ## Layout
 

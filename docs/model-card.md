@@ -33,7 +33,43 @@ print(result.parameters['n1_q'])
 print(result.indices['indices_2'], result.parameters['n2_eq'])
 ```
 
-Optional `hf` and `modelscope` package extras support cached model-ID downloads and revision pinning. The model repository distributes weights and metadata; the GitHub repository provides versioned runtime code and portable tests.
+### Hugging Face
+
+```bash
+pip install 'espaloma-onnx[hf]'
+```
+
+```python
+from espaloma_onnx import Predictor
+
+predict = Predictor.from_pretrained(
+    "youmans/espaloma-onnx",
+    source="huggingface",
+    revision="v0.1.0",
+)
+result = predict("CCO")
+print(result.parameters["n1_q"])
+```
+
+### ModelScope
+
+```bash
+pip install 'espaloma-onnx[modelscope]'
+```
+
+```python
+from espaloma_onnx import Predictor
+
+predict = Predictor.from_pretrained(
+    "youmans/espaloma-onnx",
+    source="modelscope",
+    revision="v0.1.0",
+)
+result = predict("CCO")
+print(result.parameters["n1_q"])
+```
+
+The first load downloads and caches the model. Reuse the Predictor for subsequent requests. The GitHub source repository provides runtime code, build instructions and portable tests.
 
 ## Inputs and outputs
 
