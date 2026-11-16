@@ -22,6 +22,12 @@ jobs:
         run: uv run python -c 'import os,importlib.metadata; assert os.environ["RELEASE_TAG"] == "v"+importlib.metadata.version("espaloma-onnx")'
       - uses: ./.github/actions/build-model
       - run: uv run pytest -q
+      - name: Install optional OpenFF parameter environment
+        run: |
+          pixi install -e fullff --locked
+          uv pip install --python .pixi/envs/fullff/bin/python -e .
+      - name: Validate full parameters without OpenMM or training imports
+        run: pixi run -e fullff python benchmarks/smoke_full_forcefield.py
       - run: uv build
       - run: uv run --with twine twine check dist/*
       - uses: actions/upload-artifact@v4

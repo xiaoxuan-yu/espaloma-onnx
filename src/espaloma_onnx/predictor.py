@@ -65,6 +65,10 @@ class Predictor:
             raise ValueError("source must be huggingface or modelscope")
         return cls(directory, threads=threads)
 
+    def create_forcefield(self, smiles, *, forcefield="openff_unconstrained-2.1.1.offxml"):
+        from .forcefield import create_forcefield
+        return create_forcefield(self, smiles, forcefield=forcefield)
+
     def __call__(self, smiles):
         feed = prepare(smiles)
         parameters = dict(zip(self.output_names, self.session.run(None, feed)))

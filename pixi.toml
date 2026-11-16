@@ -17,3 +17,14 @@ patchelf = "==0.19.3"
 [tasks]
 prepare-export = "python scripts/prepare_export.py"
 export = {cmd = "python scripts/export_model.py", depends-on = ["prepare-export"]}
+
+[feature.fullff.dependencies]
+setuptools = "<81"
+python = "3.10.*"
+openff-toolkit-base = "==0.14.5"
+openff-forcefields = "==2024.09.0"
+rdkit = "==2024.03.6"
+numpy = "<2"
+
+[environments]
+fullff = {features = ["fullff"], no-default-feature = true}

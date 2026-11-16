@@ -59,6 +59,10 @@ print(result.parameters["n1_q"])
 
 Both downloaders cache model files locally. Set `cache_dir` to choose the cache location or `local_files_only=True` to use cached files offline. Retain the Predictor instance across requests.
 
+## Complete force-field output
+
+With the optional OpenFF base environment, `predict.create_forcefield("CCO")` returns charges, LJ, bonded parameters and nonbonded rules as backend-neutral data. `result.write_json("forcefield.json")` saves the complete parameter set. See [installation and validation](docs/full-forcefield.md). ONNX-only inference remains available through `predict(smiles)`.
+
 ## Layout
 
 - src/espaloma_onnx/: installable runtime package and CLI
