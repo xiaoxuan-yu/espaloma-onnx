@@ -63,6 +63,23 @@ Reproduce with `uv run python benchmarks/first_request.py --model /path/to/model
 
 Reuse a Predictor for interactive applications and services. For command-line usage, the process-to-first-result row represents the initial wait most directly. [Raw samples](benchmarks/results/first-request.json) include per-process startup stages and request timings.
 
+## Full-request comparison: original DGL and ONNX
+
+Same Ryzen 9 9950X3D, 8 CPU threads and Python interpreter, 10 fresh processes per molecule/backend. Each process performs one first request, 10 warmups and 100 subsequent requests. Local model files use normal OS caching. A request starts from SMILES and returns parameter arrays; DGL builds the original OpenFF/DGL graph on each request, while ONNX builds the seven RDKit/NumPy inputs. Model loading includes file checksum verification in both paths. Source model runtime is PyTorch 2.1.2/DGL 2.1.0+cu121 on CPU; ORT is 1.20.1. Preprocessing and framework imports are part of each API path.
+
+| Molecule / operation | DGL median / P95 | ONNX median / P95 |
+|---|---:|---:|
+| Caffeine: process start to first result | 1298.83 / 1813.03 ms | 114.76 / 121.06 ms |
+| Caffeine: first SMILES request after loading | 26.08 / 37.34 ms | 6.52 / 7.12 ms |
+| Caffeine: subsequent SMILES request | 15.61 / 21.74 ms | 2.89 / 3.27 ms |
+| Cyclosporin A: process start to first result | 1772.10 / 1819.01 ms | 128.38 / 132.49 ms |
+| Cyclosporin A: first SMILES request after loading | 489.94 / 511.05 ms | 22.89 / 27.32 ms |
+| Cyclosporin A: subsequent SMILES request | 391.11 / 486.25 ms | 15.22 / 19.94 ms |
+
+For cyclosporin A, the full-request median is 25.7x faster on the independent ONNX path; process-to-first-result is 13.8x faster. This comparison measures the whole API, including the replacement of original graph preparation, rather than just the inference engine. Applications that cache original DGL graphs should use the prepared-input forward results above when estimating their benefit.
+
+Reproduce with an upstream export environment and its Python interpreter: `python benchmarks/compare_request.py --checkpoint /path/to/espaloma-0.3.2.pt --model /path/to/onnx-directory --trials 10`. The interpreter must provide upstream Espaloma and the runtime package source is resolved from this checkout. Run with the export environment activated so its AmberTools binaries are selected. [Full raw samples](benchmarks/results/request-comparison.json).
+
 [Export instructions](docs/export.md) · [Release automation](docs/publishing.md)
 
 One molecule per call; dense O(N²) adjacency, original duplicated interaction conventions and native units. The package predicts parameters, not energies, forces or complete simulation systems. See the model card before downstream integration.
