@@ -4,8 +4,7 @@ on:
     - cron: '19 3 * * *'
   workflow_dispatch:
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
 jobs:
   upstream:
     runs-on: ubuntu-latest
@@ -29,10 +28,7 @@ jobs:
           name: upstream-model-candidate
           path: .artifacts/model/
       - if: steps.check.outputs.changed == 'true'
-        uses: peter-evans/create-pull-request@v7
+        uses: actions/upload-artifact@v4
         with:
-          branch: automation/upstream-model
-          commit-message: 'Update upstream model provenance'
-          title: 'Update upstream Espaloma model'
-          body: 'Upstream model changed. Candidate export and current reference checks passed. Review model support, package version and validation data before releasing.'
-          add-paths: model-metadata/
+          name: upstream-candidate-metadata
+          path: model-metadata/
