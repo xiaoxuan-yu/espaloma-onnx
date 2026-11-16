@@ -1,0 +1,103 @@
+{
+  "threads": 8,
+  "repeats": 100,
+  "warmup": 10,
+  "onnx": "1.16.2",
+  "onnxruntime": "1.20.1",
+  "torch": "2.1.2",
+  "model_bytes": 35279535,
+  "export_ms": 149.5739909587428,
+  "session_init_ms": 13.871807022951543,
+  "dynamic_model": true,
+  "spinning": false,
+  "results": [
+    {
+      "molecule": "caffeine",
+      "atoms": 24,
+      "preparation_ms": 0.9907709900289774,
+      "first_ort_forward_ms": 3.897135960869491,
+      "checked_outputs": 11,
+      "max_absolute_error": 7.152557373046875e-07,
+      "timings": {
+        "dgl": {
+          "median_ms": 6.814113992732018,
+          "p95_ms": 8.242357560084201
+        },
+        "tensor": {
+          "median_ms": 3.3541044977027923,
+          "p95_ms": 4.069125003297813
+        },
+        "onnxruntime": {
+          "median_ms": 2.69351399037987,
+          "p95_ms": 3.4745759970974177
+        }
+      }
+    },
+    {
+      "molecule": "cyclosporin",
+      "atoms": 196,
+      "preparation_ms": 1.2246909900568426,
+      "first_ort_forward_ms": 19.336994970217347,
+      "checked_outputs": 11,
+      "max_absolute_error": 1.1920928955078125e-06,
+      "timings": {
+        "dgl": {
+          "median_ms": 23.60999450320378,
+          "p95_ms": 26.856873533688486
+        },
+        "tensor": {
+          "median_ms": 19.61546449456364,
+          "p95_ms": 21.94754109659698
+        },
+        "onnxruntime": {
+          "median_ms": 11.808779498096555,
+          "p95_ms": 15.751594977336936
+        }
+      }
+    },
+    {
+      "molecule": "butane",
+      "atoms": 14,
+      "preparation_ms": 1.0838619782589376,
+      "first_ort_forward_ms": 1.3443520292639732,
+      "checked_outputs": 10,
+      "max_absolute_error": 5.960464477539062e-07,
+      "timings": {
+        "dgl": {
+          "median_ms": 4.171541018877178,
+          "p95_ms": 4.7999544942285866
+        },
+        "tensor": {
+          "median_ms": 1.6156320052687079,
+          "p95_ms": 1.8760700186248866
+        },
+        "onnxruntime": {
+          "median_ms": 1.0512209846638143,
+          "p95_ms": 1.4263295364798978
+        }
+      }
+    },
+    {
+      "molecule": "ammonium",
+      "atoms": 5,
+      "preparation_ms": 1.0906209936365485,
+      "first_ort_forward_ms": 0.7265909807756543,
+      "checked_outputs": 9,
+      "max_absolute_error": 4.76837158203125e-07,
+      "timings": {
+        "dgl": {
+          "median_ms": 2.5818079884629697,
+          "p95_ms": 3.0024880077689886
+        },
+        "tensor": {
+          "median_ms": 0.547441013623029,
+          "p95_ms": 0.7288330176379532
+        },
+        "onnxruntime": {
+          "median_ms": 0.36928552435711026,
+          "p95_ms": 0.3942359588108957
+        }
+      }
+    }
+  ]
+}

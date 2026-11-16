@@ -1,0 +1,61 @@
+{
+  "format": "onnx",
+  "opset": 17,
+  "dtype": "float32",
+  "upstream_model": "espaloma-0.3.2",
+  "upstream_url": "https://github.com/choderalab/espaloma/releases/download/0.3.2/espaloma-0.3.2.pt",
+  "runtime": "onnxruntime CPUExecutionProvider",
+  "inputs": {
+    "features": [
+      "float32",
+      [
+        "atoms",
+        114
+      ]
+    ],
+    "adjacency": [
+      "float32",
+      [
+        "atoms",
+        "atoms"
+      ]
+    ],
+    "indices_2": [
+      "int64",
+      [
+        "bonds",
+        2
+      ]
+    ],
+    "indices_3": [
+      "int64",
+      [
+        "angles",
+        3
+      ]
+    ],
+    "indices_4": [
+      "int64",
+      [
+        "propers",
+        4
+      ]
+    ],
+    "indices_4_improper": [
+      "int64",
+      [
+        "impropers",
+        4
+      ]
+    ],
+    "charge": [
+      "float32",
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  "batching": "one molecule per call",
+  "license": "MIT"
+}

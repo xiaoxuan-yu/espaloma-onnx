@@ -1,0 +1,10 @@
+{
+  "version": "0.1.0",
+  "tests_passed": 6,
+  "reference_cases_passed": 116,
+  "wheel_install_clean_environment": "passed",
+  "wheel_cli_from_tmp": "passed",
+  "wheel_aspirin_dgl_reference": "passed",
+  "torch_dgl_openff_espaloma_installed": false,
+  "remote_downloads": "adapter mocks tested; live repositories not yet published/tested"
+}

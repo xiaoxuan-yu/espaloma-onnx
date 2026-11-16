@@ -1,0 +1,8 @@
+Derived from Espaloma 0.3.2 by Yuanqing Wang and the Chodera laboratory.
+Upstream repository: https://github.com/choderalab/espaloma
+Copyright (c) 2020 Yuanqing Wang @ choderalab // MSKCC
+Distributed under the upstream project MIT License, including this conversion of the officially released checkpoint. The original copyright and permission notice are retained in LICENSE. No separate weight-specific license notice has been identified.
+This ONNX conversion is not an official upstream release. No new training or scientific accuracy claim is made.
+
+Copyright (c) 2026 Xiaoxuan Yu, Peking University
+The 2026 copyright notice covers original contributions to preprocessing, ONNX conversion tooling, inference packaging, documentation and tests. The original trained model and weights remain attributed to their upstream authors. The converted ONNX weights are distributed under MIT with both notices retained.

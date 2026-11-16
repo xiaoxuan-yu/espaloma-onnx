@@ -1,0 +1,594 @@
+[
+  {
+    "name": "methane",
+    "smiles": "C",
+    "reference": "ok"
+  },
+  {
+    "name": "methane_reordered",
+    "smiles": "C",
+    "reference": "ok"
+  },
+  {
+    "name": "ethane",
+    "smiles": "CC",
+    "reference": "ok"
+  },
+  {
+    "name": "ethane_reordered",
+    "smiles": "CC",
+    "reference": "ok"
+  },
+  {
+    "name": "ethene",
+    "smiles": "C=C",
+    "reference": "ok"
+  },
+  {
+    "name": "ethene_reordered",
+    "smiles": "C=C",
+    "reference": "ok"
+  },
+  {
+    "name": "acetylene",
+    "smiles": "C#C",
+    "reference": "ok"
+  },
+  {
+    "name": "acetylene_reordered",
+    "smiles": "C#C",
+    "reference": "ok"
+  },
+  {
+    "name": "water",
+    "smiles": "O",
+    "reference": "ok"
+  },
+  {
+    "name": "water_reordered",
+    "smiles": "O",
+    "reference": "ok"
+  },
+  {
+    "name": "ammonia",
+    "smiles": "N",
+    "reference": "ok"
+  },
+  {
+    "name": "ammonia_reordered",
+    "smiles": "N",
+    "reference": "ok"
+  },
+  {
+    "name": "hydrogen",
+    "smiles": "[H][H]",
+    "reference": "error",
+    "error": "IndexError('too many indices for array: array is 1-dimensional, but 2 were indexed')"
+  },
+  {
+    "name": "hydrogen_reordered",
+    "smiles": "[H][H]",
+    "reference": "error",
+    "error": "IndexError('too many indices for array: array is 1-dimensional, but 2 were indexed')"
+  },
+  {
+    "name": "butane",
+    "smiles": "CCCC",
+    "reference": "ok"
+  },
+  {
+    "name": "butane_reordered",
+    "smiles": "CCCC",
+    "reference": "ok"
+  },
+  {
+    "name": "branched",
+    "smiles": "CC(C)(C)C",
+    "reference": "ok"
+  },
+  {
+    "name": "branched_reordered",
+    "smiles": "CC(C)(C)C",
+    "reference": "ok"
+  },
+  {
+    "name": "long_chain",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "reference": "ok"
+  },
+  {
+    "name": "long_chain_reordered",
+    "smiles": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "reference": "ok"
+  },
+  {
+    "name": "benzene",
+    "smiles": "c1ccccc1",
+    "reference": "ok"
+  },
+  {
+    "name": "benzene_reordered",
+    "smiles": "c1ccccc1",
+    "reference": "ok"
+  },
+  {
+    "name": "naphthalene",
+    "smiles": "c1ccc2ccccc2c1",
+    "reference": "ok"
+  },
+  {
+    "name": "naphthalene_reordered",
+    "smiles": "c1c2ccccc2ccc1",
+    "reference": "ok"
+  },
+  {
+    "name": "pyridine",
+    "smiles": "c1ccncc1",
+    "reference": "ok"
+  },
+  {
+    "name": "pyridine_reordered",
+    "smiles": "c1cnccc1",
+    "reference": "ok"
+  },
+  {
+    "name": "pyrrole",
+    "smiles": "c1cc[nH]c1",
+    "reference": "ok"
+  },
+  {
+    "name": "pyrrole_reordered",
+    "smiles": "c1[nH]ccc1",
+    "reference": "ok"
+  },
+  {
+    "name": "imidazole",
+    "smiles": "c1ncc[nH]1",
+    "reference": "ok"
+  },
+  {
+    "name": "imidazole_reordered",
+    "smiles": "[nH]1ccnc1",
+    "reference": "ok"
+  },
+  {
+    "name": "furan",
+    "smiles": "c1ccoc1",
+    "reference": "ok"
+  },
+  {
+    "name": "furan_reordered",
+    "smiles": "c1occc1",
+    "reference": "ok"
+  },
+  {
+    "name": "thiophene",
+    "smiles": "c1ccsc1",
+    "reference": "ok"
+  },
+  {
+    "name": "thiophene_reordered",
+    "smiles": "c1sccc1",
+    "reference": "ok"
+  },
+  {
+    "name": "cyclopropane",
+    "smiles": "C1CC1",
+    "reference": "ok"
+  },
+  {
+    "name": "cyclopropane_reordered",
+    "smiles": "C1CC1",
+    "reference": "ok"
+  },
+  {
+    "name": "cyclohexane",
+    "smiles": "C1CCCCC1",
+    "reference": "ok"
+  },
+  {
+    "name": "cyclohexane_reordered",
+    "smiles": "C1CCCCC1",
+    "reference": "ok"
+  },
+  {
+    "name": "bicyclic",
+    "smiles": "C1CC2CCC1C2",
+    "reference": "ok"
+  },
+  {
+    "name": "bicyclic_reordered",
+    "smiles": "C1C2CCC1CC2",
+    "reference": "ok"
+  },
+  {
+    "name": "macrocycle",
+    "smiles": "C1CCCCCCCCCCC1",
+    "reference": "ok"
+  },
+  {
+    "name": "macrocycle_reordered",
+    "smiles": "C1CCCCCCCCCCC1",
+    "reference": "ok"
+  },
+  {
+    "name": "ethanol",
+    "smiles": "CCO",
+    "reference": "ok"
+  },
+  {
+    "name": "ethanol_reordered",
+    "smiles": "OCC",
+    "reference": "ok"
+  },
+  {
+    "name": "ether",
+    "smiles": "COC",
+    "reference": "ok"
+  },
+  {
+    "name": "ether_reordered",
+    "smiles": "COC",
+    "reference": "ok"
+  },
+  {
+    "name": "aldehyde",
+    "smiles": "CC=O",
+    "reference": "ok"
+  },
+  {
+    "name": "aldehyde_reordered",
+    "smiles": "O=CC",
+    "reference": "ok"
+  },
+  {
+    "name": "ketone",
+    "smiles": "CC(=O)C",
+    "reference": "ok"
+  },
+  {
+    "name": "ketone_reordered",
+    "smiles": "CC(=O)C",
+    "reference": "ok"
+  },
+  {
+    "name": "acid",
+    "smiles": "CC(=O)O",
+    "reference": "ok"
+  },
+  {
+    "name": "acid_reordered",
+    "smiles": "OC(=O)C",
+    "reference": "ok"
+  },
+  {
+    "name": "ester",
+    "smiles": "CC(=O)OC",
+    "reference": "ok"
+  },
+  {
+    "name": "ester_reordered",
+    "smiles": "COC(=O)C",
+    "reference": "ok"
+  },
+  {
+    "name": "amide",
+    "smiles": "CC(=O)N",
+    "reference": "ok"
+  },
+  {
+    "name": "amide_reordered",
+    "smiles": "NC(=O)C",
+    "reference": "ok"
+  },
+  {
+    "name": "urea",
+    "smiles": "NC(=O)N",
+    "reference": "ok"
+  },
+  {
+    "name": "urea_reordered",
+    "smiles": "NC(=O)N",
+    "reference": "ok"
+  },
+  {
+    "name": "nitrile",
+    "smiles": "CC#N",
+    "reference": "ok"
+  },
+  {
+    "name": "nitrile_reordered",
+    "smiles": "N#CC",
+    "reference": "ok"
+  },
+  {
+    "name": "nitro",
+    "smiles": "C[N+](=O)[O-]",
+    "reference": "ok"
+  },
+  {
+    "name": "nitro_reordered",
+    "smiles": "[O-][N+](=O)C",
+    "reference": "ok"
+  },
+  {
+    "name": "guanidine",
+    "smiles": "NC(=N)N",
+    "reference": "ok"
+  },
+  {
+    "name": "guanidine_reordered",
+    "smiles": "NC(=N)N",
+    "reference": "ok"
+  },
+  {
+    "name": "thiol",
+    "smiles": "CCS",
+    "reference": "ok"
+  },
+  {
+    "name": "thiol_reordered",
+    "smiles": "SCC",
+    "reference": "ok"
+  },
+  {
+    "name": "sulfide",
+    "smiles": "CSC",
+    "reference": "ok"
+  },
+  {
+    "name": "sulfide_reordered",
+    "smiles": "CSC",
+    "reference": "ok"
+  },
+  {
+    "name": "sulfoxide",
+    "smiles": "CS(=O)C",
+    "reference": "ok"
+  },
+  {
+    "name": "sulfoxide_reordered",
+    "smiles": "CS(=O)C",
+    "reference": "ok"
+  },
+  {
+    "name": "sulfone",
+    "smiles": "CS(=O)(=O)C",
+    "reference": "ok"
+  },
+  {
+    "name": "sulfone_reordered",
+    "smiles": "CS(=O)(=O)C",
+    "reference": "ok"
+  },
+  {
+    "name": "sulfonamide",
+    "smiles": "CS(=O)(=O)N",
+    "reference": "ok"
+  },
+  {
+    "name": "sulfonamide_reordered",
+    "smiles": "NS(=O)(=O)C",
+    "reference": "ok"
+  },
+  {
+    "name": "phosphate",
+    "smiles": "OP(=O)(O)O",
+    "reference": "ok"
+  },
+  {
+    "name": "phosphate_reordered",
+    "smiles": "OP(O)(=O)O",
+    "reference": "ok"
+  },
+  {
+    "name": "fluorinated",
+    "smiles": "FC(F)(F)C",
+    "reference": "ok"
+  },
+  {
+    "name": "fluorinated_reordered",
+    "smiles": "CC(F)(F)F",
+    "reference": "ok"
+  },
+  {
+    "name": "chlorinated",
+    "smiles": "ClCCCl",
+    "reference": "ok"
+  },
+  {
+    "name": "chlorinated_reordered",
+    "smiles": "ClCCCl",
+    "reference": "ok"
+  },
+  {
+    "name": "brominated",
+    "smiles": "CCBr",
+    "reference": "ok"
+  },
+  {
+    "name": "brominated_reordered",
+    "smiles": "BrCC",
+    "reference": "ok"
+  },
+  {
+    "name": "iodinated",
+    "smiles": "CCI",
+    "reference": "ok"
+  },
+  {
+    "name": "iodinated_reordered",
+    "smiles": "ICC",
+    "reference": "ok"
+  },
+  {
+    "name": "ammonium",
+    "smiles": "[NH4+]",
+    "reference": "ok"
+  },
+  {
+    "name": "ammonium_reordered",
+    "smiles": "[NH4+]",
+    "reference": "ok"
+  },
+  {
+    "name": "methylammonium",
+    "smiles": "C[NH3+]",
+    "reference": "ok"
+  },
+  {
+    "name": "methylammonium_reordered",
+    "smiles": "[NH3+]C",
+    "reference": "ok"
+  },
+  {
+    "name": "acetate",
+    "smiles": "CC(=O)[O-]",
+    "reference": "ok"
+  },
+  {
+    "name": "acetate_reordered",
+    "smiles": "[O-]C(=O)C",
+    "reference": "ok"
+  },
+  {
+    "name": "guanidinium",
+    "smiles": "NC(N)=[NH2+]",
+    "reference": "ok"
+  },
+  {
+    "name": "guanidinium_reordered",
+    "smiles": "[NH2+]=C(N)N",
+    "reference": "ok"
+  },
+  {
+    "name": "pyridinium",
+    "smiles": "c1cc[nH+]cc1",
+    "reference": "ok"
+  },
+  {
+    "name": "pyridinium_reordered",
+    "smiles": "c1c[nH+]ccc1",
+    "reference": "ok"
+  },
+  {
+    "name": "zwitterion",
+    "smiles": "[NH3+]CC(=O)[O-]",
+    "reference": "ok"
+  },
+  {
+    "name": "zwitterion_reordered",
+    "smiles": "[O-]C(=O)C[NH3+]",
+    "reference": "ok"
+  },
+  {
+    "name": "dication",
+    "smiles": "[NH3+]CC[NH3+]",
+    "reference": "ok"
+  },
+  {
+    "name": "dication_reordered",
+    "smiles": "[NH3+]CC[NH3+]",
+    "reference": "ok"
+  },
+  {
+    "name": "dianion",
+    "smiles": "[O-]C(=O)CC(=O)[O-]",
+    "reference": "ok"
+  },
+  {
+    "name": "dianion_reordered",
+    "smiles": "[O-]C(=O)CC(=O)[O-]",
+    "reference": "ok"
+  },
+  {
+    "name": "isotope",
+    "smiles": "[13CH3]CO",
+    "reference": "ok"
+  },
+  {
+    "name": "isotope_reordered",
+    "smiles": "OC[13CH3]",
+    "reference": "ok"
+  },
+  {
+    "name": "chiral_R",
+    "smiles": "N[C@@H](C)C(=O)O",
+    "reference": "ok"
+  },
+  {
+    "name": "chiral_R_reordered",
+    "smiles": "OC(=O)[C@H](C)N",
+    "reference": "ok"
+  },
+  {
+    "name": "chiral_S",
+    "smiles": "N[C@H](C)C(=O)O",
+    "reference": "ok"
+  },
+  {
+    "name": "chiral_S_reordered",
+    "smiles": "OC(=O)[C@@H](C)N",
+    "reference": "ok"
+  },
+  {
+    "name": "alkene_E",
+    "smiles": "C/C=C/C",
+    "reference": "ok"
+  },
+  {
+    "name": "alkene_E_reordered",
+    "smiles": "C/C=C/C",
+    "reference": "ok"
+  },
+  {
+    "name": "alkene_Z",
+    "smiles": "C/C=C\\C",
+    "reference": "ok"
+  },
+  {
+    "name": "alkene_Z_reordered",
+    "smiles": "C/C=C\\C",
+    "reference": "ok"
+  },
+  {
+    "name": "aspirin",
+    "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+    "reference": "ok"
+  },
+  {
+    "name": "aspirin_reordered",
+    "smiles": "OC(=O)c1ccccc1OC(=O)C",
+    "reference": "ok"
+  },
+  {
+    "name": "caffeine",
+    "smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+    "reference": "ok"
+  },
+  {
+    "name": "caffeine_reordered",
+    "smiles": "Cn1c(=O)n(C)c2c(c1=O)n(C)cn2",
+    "reference": "ok"
+  },
+  {
+    "name": "peptide",
+    "smiles": "NCC(=O)N[C@@H](C)C(=O)NCC(=O)O",
+    "reference": "ok"
+  },
+  {
+    "name": "peptide_reordered",
+    "smiles": "OC(=O)CNC(=O)[C@H](C)NC(=O)CN",
+    "reference": "ok"
+  },
+  {
+    "name": "cyclosporin",
+    "smiles": "C/C=C/C[C@@H](C)[C@@H](O)[C@H]1C(=O)N[C@@H](CC)C(=O)N(C)CC(=O)N(C)[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@H](C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N(C)[C@@H](C(C)C)C(=O)N1C",
+    "reference": "ok"
+  },
+  {
+    "name": "cyclosporin_reordered",
+    "smiles": "CN1C(=O)[C@H](C(C)C)N(C)C(=O)[C@H](CC(C)C)N(C)C(=O)[C@H](CC(C)C)N(C)C(=O)[C@@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)N(C)C(=O)[C@H](C(C)C)NC(=O)[C@H](CC(C)C)N(C)C(=O)CN(C)C(=O)[C@H](CC)NC(=O)[C@@H]1[C@H](O)[C@H](C)C/C=C/C",
+    "reference": "ok"
+  }
+]

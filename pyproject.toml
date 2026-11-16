@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "espaloma-onnx"
+version = "0.1.0"
+description = "CPU molecular mechanics parameter assignment with Espaloma ONNX"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = "MIT"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{name = "Xiaoxuan Yu, Peking University"}]
+dependencies = ["numpy>=1.24,<2", "rdkit>=2024.3,<2025", "onnxruntime==1.20.1"]
+
+[project.optional-dependencies]
+hf = ["huggingface-hub>=0.24,<2"]
+modelscope = ["modelscope>=1.20,<2"]
+
+[project.scripts]
+espaloma-onnx = "espaloma_onnx.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<9"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/espaloma_onnx"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/", "pyproject.toml", "README.md", "LICENSE", "NOTICE", "uv.lock"]

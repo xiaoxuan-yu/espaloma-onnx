@@ -1,0 +1,948 @@
+{
+  "imports_blocked": true,
+  "results": [
+    {
+      "name": "methane",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 2.4162890040315688,
+      "smiles_to_outputs_ms": 1.2613899889402092,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "methane_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.17685000784695148,
+      "smiles_to_outputs_ms": 0.6285400013439357,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "ethane",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.17784995725378394,
+      "smiles_to_outputs_ms": 1.1404199758544564,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "ethane_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.18544000340625644,
+      "smiles_to_outputs_ms": 1.089580007828772,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "ethene",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.16885995864868164,
+      "smiles_to_outputs_ms": 1.0506600374355912,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "ethene_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.16803003381937742,
+      "smiles_to_outputs_ms": 0.9002300212159753,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "acetylene",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.12868002522736788,
+      "smiles_to_outputs_ms": 0.5796700133942068,
+      "max_absolute_error": 1.9073486328125e-06
+    },
+    {
+      "name": "acetylene_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.12828002218157053,
+      "smiles_to_outputs_ms": 0.6186799728311598,
+      "max_absolute_error": 1.9073486328125e-06
+    },
+    {
+      "name": "water",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.1273200032301247,
+      "smiles_to_outputs_ms": 0.38644997403025627,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "water_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.11412001913413405,
+      "smiles_to_outputs_ms": 0.34980999771505594,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "ammonia",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.1320600276812911,
+      "smiles_to_outputs_ms": 0.6032899837009609,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "ammonia_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.15207997057586908,
+      "smiles_to_outputs_ms": 0.5641600000672042,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "hydrogen",
+      "smiles": "[H][H]",
+      "reference": "error",
+      "error": "IndexError('too many indices for array: array is 1-dimensional, but 2 were indexed')"
+    },
+    {
+      "name": "hydrogen_reordered",
+      "smiles": "[H][H]",
+      "reference": "error",
+      "error": "IndexError('too many indices for array: array is 1-dimensional, but 2 were indexed')"
+    },
+    {
+      "name": "butane",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.27264002710580826,
+      "smiles_to_outputs_ms": 1.6576400375925004,
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "butane_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.27903896989300847,
+      "smiles_to_outputs_ms": 1.5616600285284221,
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "branched",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.30983000760897994,
+      "smiles_to_outputs_ms": 1.926138997077942,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "branched_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.3129600081592798,
+      "smiles_to_outputs_ms": 1.8729399889707565,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "long_chain",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 1.586009981110692,
+      "smiles_to_outputs_ms": 14.562986965756863,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "long_chain_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 1.6278590192086995,
+      "smiles_to_outputs_ms": 13.698377006221563,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "benzene",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.47758000437170267,
+      "smiles_to_outputs_ms": 2.122759004123509,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "benzene_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.3413200029172003,
+      "smiles_to_outputs_ms": 1.9305300083942711,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "naphthalene",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.42266998207196593,
+      "smiles_to_outputs_ms": 2.6972200139425695,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "naphthalene_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.43870898662135005,
+      "smiles_to_outputs_ms": 2.1470299689099193,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "pyridine",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.31696894438937306,
+      "smiles_to_outputs_ms": 1.414130034390837,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "pyridine_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.3092800034210086,
+      "smiles_to_outputs_ms": 1.595249050296843,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "pyrrole",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2744199591688812,
+      "smiles_to_outputs_ms": 1.6361299785785377,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "pyrrole_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.27184997452422976,
+      "smiles_to_outputs_ms": 1.6193200135603547,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "imidazole",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2628900110721588,
+      "smiles_to_outputs_ms": 1.5164089854806662,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "imidazole_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2885399735532701,
+      "smiles_to_outputs_ms": 1.420710003003478,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "furan",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.26096904184669256,
+      "smiles_to_outputs_ms": 1.4081700355745852,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "furan_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.25904999347403646,
+      "smiles_to_outputs_ms": 1.4157789992168546,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "thiophene",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.25934999575838447,
+      "smiles_to_outputs_ms": 1.5250000287778676,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "thiophene_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.26329996762797236,
+      "smiles_to_outputs_ms": 1.3992700260132551,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "cyclopropane",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2914000069722533,
+      "smiles_to_outputs_ms": 1.3156700297258794,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "cyclopropane_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.22573996102437377,
+      "smiles_to_outputs_ms": 1.2030799989588559,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "cyclohexane",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.3331699990667403,
+      "smiles_to_outputs_ms": 2.1883490262553096,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "cyclohexane_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.36325003020465374,
+      "smiles_to_outputs_ms": 2.125368977431208,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "bicyclic",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.4257800173945725,
+      "smiles_to_outputs_ms": 3.022208984475583,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "bicyclic_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.40652998723089695,
+      "smiles_to_outputs_ms": 2.595599042251706,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "macrocycle",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.5760900094173849,
+      "smiles_to_outputs_ms": 3.929219034034759,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "macrocycle_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.5860499804839492,
+      "smiles_to_outputs_ms": 3.8783089839853346,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "ethanol",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.24813000345602632,
+      "smiles_to_outputs_ms": 1.0238089598715305,
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "ethanol_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.20534003851935267,
+      "smiles_to_outputs_ms": 0.9294400224462152,
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "ether",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.1910399878397584,
+      "smiles_to_outputs_ms": 0.8147190092131495,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "ether_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2739999908953905,
+      "smiles_to_outputs_ms": 0.9178899927064776,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "aldehyde",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.21919002756476402,
+      "smiles_to_outputs_ms": 1.1331099667586386,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "aldehyde_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.20553998183459044,
+      "smiles_to_outputs_ms": 1.0009899851866066,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "ketone",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.22322998847812414,
+      "smiles_to_outputs_ms": 1.190909999422729,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "ketone_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.21605001529678702,
+      "smiles_to_outputs_ms": 1.1269300011917949,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "acid",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.20157999824732542,
+      "smiles_to_outputs_ms": 1.1085199657827616,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "acid_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.20018004579469562,
+      "smiles_to_outputs_ms": 0.9829089976847172,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "ester",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.25445001665502787,
+      "smiles_to_outputs_ms": 1.1935500078834593,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "ester_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.25897001614794135,
+      "smiles_to_outputs_ms": 1.3127400306984782,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "amide",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2752399886958301,
+      "smiles_to_outputs_ms": 1.4598999987356365,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "amide_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2522100112400949,
+      "smiles_to_outputs_ms": 1.2119199964217842,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "urea",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.20394002785906196,
+      "smiles_to_outputs_ms": 1.1430190061219037,
+      "max_absolute_error": 8.344650268554688e-07
+    },
+    {
+      "name": "urea_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.1984299742616713,
+      "smiles_to_outputs_ms": 1.0517999762669206,
+      "max_absolute_error": 8.344650268554688e-07
+    },
+    {
+      "name": "nitrile",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.16971997683867812,
+      "smiles_to_outputs_ms": 0.7066690013743937,
+      "max_absolute_error": 8.344650268554688e-07
+    },
+    {
+      "name": "nitrile_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.17389998538419604,
+      "smiles_to_outputs_ms": 0.6248499848879874,
+      "max_absolute_error": 8.344650268554688e-07
+    },
+    {
+      "name": "nitro",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.18203002400696278,
+      "smiles_to_outputs_ms": 0.9024399914778769,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "nitro_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.18801999976858497,
+      "smiles_to_outputs_ms": 0.8477999945171177,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "guanidine",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2081499551422894,
+      "smiles_to_outputs_ms": 1.130039046984166,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "guanidine_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2111300127580762,
+      "smiles_to_outputs_ms": 1.1353400186635554,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "thiol",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.20319997565820813,
+      "smiles_to_outputs_ms": 0.8361689979210496,
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "thiol_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.19612995674833655,
+      "smiles_to_outputs_ms": 0.7855500443838537,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "sulfide",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.18535001436248422,
+      "smiles_to_outputs_ms": 0.8432089816778898,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "sulfide_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.19049004185944796,
+      "smiles_to_outputs_ms": 0.8117000106722116,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "sulfoxide",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.21481997100636363,
+      "smiles_to_outputs_ms": 1.1322199716232717,
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "sulfoxide_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2222399925813079,
+      "smiles_to_outputs_ms": 1.1413800530135632,
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "sulfone",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.23141998099163175,
+      "smiles_to_outputs_ms": 0.9679800132289529,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "sulfone_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.21945004118606448,
+      "smiles_to_outputs_ms": 1.0877900058403611,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "sulfonamide",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.21565001225098968,
+      "smiles_to_outputs_ms": 1.2908990029245615,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "sulfonamide_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.25063997600227594,
+      "smiles_to_outputs_ms": 1.2061500456184149,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "phosphate",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.19566999981179833,
+      "smiles_to_outputs_ms": 0.8221390307880938,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "phosphate_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.18005003221333027,
+      "smiles_to_outputs_ms": 0.7620099931955338,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "fluorinated",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.17733999993652105,
+      "smiles_to_outputs_ms": 0.781949027441442,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "fluorinated_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.17973000649362803,
+      "smiles_to_outputs_ms": 0.7820500177331269,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "chlorinated",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.18602999625727534,
+      "smiles_to_outputs_ms": 0.7766700000502169,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "chlorinated_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.17930998001247644,
+      "smiles_to_outputs_ms": 0.7833899580873549,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "brominated",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.17786002717912197,
+      "smiles_to_outputs_ms": 0.8367099799215794,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "brominated_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.19301899010315537,
+      "smiles_to_outputs_ms": 0.8006400312297046,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "iodinated",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.18649001140147448,
+      "smiles_to_outputs_ms": 0.7990500307641923,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "iodinated_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.17860904335975647,
+      "smiles_to_outputs_ms": 0.7874799775891006,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "ammonium",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.13920001219958067,
+      "smiles_to_outputs_ms": 0.45819999650120735,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "ammonium_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.1667100004851818,
+      "smiles_to_outputs_ms": 0.47631998313590884,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "methylammonium",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.24253001902252436,
+      "smiles_to_outputs_ms": 1.0494000161997974,
+      "max_absolute_error": 8.344650268554688e-07
+    },
+    {
+      "name": "methylammonium_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.25040999753400683,
+      "smiles_to_outputs_ms": 1.0334689868614078,
+      "max_absolute_error": 8.344650268554688e-07
+    },
+    {
+      "name": "acetate",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.23990997578948736,
+      "smiles_to_outputs_ms": 1.209969981573522,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "acetate_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.22018002346158028,
+      "smiles_to_outputs_ms": 1.1517599923536181,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "guanidinium",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.23564998991787434,
+      "smiles_to_outputs_ms": 1.3210400356911123,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "guanidinium_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.21788000594824553,
+      "smiles_to_outputs_ms": 1.116469968110323,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "pyridinium",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.3111099940724671,
+      "smiles_to_outputs_ms": 1.4637290150858462,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "pyridinium_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.30742998933419585,
+      "smiles_to_outputs_ms": 1.4750600093975663,
+      "max_absolute_error": 1.1920928955078125e-06
+    },
+    {
+      "name": "zwitterion",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2533000078983605,
+      "smiles_to_outputs_ms": 1.3587800203822553,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "zwitterion_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2493600477464497,
+      "smiles_to_outputs_ms": 1.312489970587194,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "dication",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2728099934756756,
+      "smiles_to_outputs_ms": 1.4882400282658637,
+      "max_absolute_error": 8.344650268554688e-07
+    },
+    {
+      "name": "dication_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.25362998712807894,
+      "smiles_to_outputs_ms": 1.4344590017572045,
+      "max_absolute_error": 8.344650268554688e-07
+    },
+    {
+      "name": "dianion",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.21651998395100236,
+      "smiles_to_outputs_ms": 1.1736799497157335,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "dianion_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2613499527797103,
+      "smiles_to_outputs_ms": 1.173419994302094,
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "isotope",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.20248000510036945,
+      "smiles_to_outputs_ms": 1.0227299644611776,
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "isotope_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.19363994942978024,
+      "smiles_to_outputs_ms": 0.8940900443121791,
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "chiral_R",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.27834996581077576,
+      "smiles_to_outputs_ms": 1.5137299778871238,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "chiral_R_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.27365999994799495,
+      "smiles_to_outputs_ms": 1.501350023318082,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "chiral_S",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2783700474537909,
+      "smiles_to_outputs_ms": 1.4940500259399414,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "chiral_S_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2739799674600363,
+      "smiles_to_outputs_ms": 1.4747099485248327,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "alkene_E",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2817999920807779,
+      "smiles_to_outputs_ms": 1.408000010997057,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "alkene_E_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.26027997955679893,
+      "smiles_to_outputs_ms": 1.3500190107151866,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "alkene_Z",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.2509899786673486,
+      "smiles_to_outputs_ms": 1.3460799818858504,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "alkene_Z_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.25087897665798664,
+      "smiles_to_outputs_ms": 1.3257800019346178,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "aspirin",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.44978997902944684,
+      "smiles_to_outputs_ms": 2.6165589806623757,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "aspirin_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.44678995618596673,
+      "smiles_to_outputs_ms": 2.552039048168808,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "caffeine",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.46257005305960774,
+      "smiles_to_outputs_ms": 2.996968978550285,
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "caffeine_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.4880300257354975,
+      "smiles_to_outputs_ms": 2.4398689856752753,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "peptide",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.4952199524268508,
+      "smiles_to_outputs_ms": 2.330058952793479,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "peptide_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 0.4903199733234942,
+      "smiles_to_outputs_ms": 2.382489969022572,
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "cyclosporin",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 2.8099699993617833,
+      "smiles_to_outputs_ms": 18.433685996569693,
+      "max_absolute_error": 1.1920928955078125e-06
+    },
+    {
+      "name": "cyclosporin_reordered",
+      "status": "pass",
+      "stage": "inference",
+      "prepare_ms": 2.8436389984562993,
+      "smiles_to_outputs_ms": 20.551814988721162,
+      "max_absolute_error": 1.1920928955078125e-06
+    }
+  ],
+  "passed": 116,
+  "failed": 0,
+  "reference_errors": 2
+}

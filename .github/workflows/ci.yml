@@ -1,0 +1,17 @@
+name: CI
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v7
+        with:
+          python-version: '3.10'
+      - run: uv sync --locked
+      - uses: ./.github/actions/build-model
+      - run: uv run pytest -q
+      - run: uv build
+      - run: uv run --with twine twine check dist/*
