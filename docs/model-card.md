@@ -70,7 +70,22 @@ Ryzen 9 9950X3D, FP32, CPUExecutionProvider, 10 warmups and 100 sequential reque
 | Cyclosporin A (196 atoms with H) | 8 | 11.81 / 15.75 ms | 23.61 / 26.86 ms |
 | Cyclosporin A | 16 | 12.50 / 13.41 ms | 21.15 / 25.32 ms |
 
-Forward timings exclude SMILES preprocessing, process startup and session initialization. Session initialization was approximately 14 ms. Results depend on hardware and system load. Runtime uses sequential execution, one inter-op thread, configurable intra-op threads, spinning disabled. See raw JSON reports.
+The table measures ONNX execution using prepared NumPy graph inputs. Runtime settings are sequential execution, one inter-op thread, the indicated intra-op threads and disabled thread spinning. The following measurements cover the user-facing SMILES API and process startup.
+
+## First result and request latency
+
+Ryzen 9 9950X3D, 8 CPU threads, local model files:
+
+| User operation | Caffeine median / P95 | Cyclosporin A median / P95 |
+|---|---:|---:|
+| Start a Python process and receive the first result | 140.23 / 209.98 ms | 155.20 / 157.14 ms |
+| Initialize Predictor (runtime import, file verification and session creation) | 47.87 / 56.10 ms | 47.02 / 48.41 ms |
+| First SMILES request after Predictor initialization | 6.57 / 7.33 ms | 21.66 / 24.18 ms |
+| Subsequent SMILES requests on a resident Predictor | 3.01 / 3.71 ms | 15.41 / 19.26 ms |
+
+SMILES request timing covers molecular preprocessing, ONNX execution and result assembly. Process-to-first-result timing additionally covers Python startup, package imports and Predictor initialization. Each molecule was measured in 10 fresh subprocesses using local files with normal OS filesystem caching; each subprocess then performed 10 warmups and 100 requests (1,000 resident requests per molecule). Model download is a separate installation step. The rows measure different scopes; their medians are not additive.
+
+Reuse a Predictor for interactive applications and services. For command-line usage, the process-to-first-result row represents the initial wait most directly. [Raw samples](validation/first-request.json) include per-process startup stages and request timings.
 
 ## Limitations
 
