@@ -1,0 +1,106 @@
+[
+  {
+    "molecule": "caffeine",
+    "atoms": 24,
+    "threads": 16,
+    "preparation_ms": 1.0254039661958814,
+    "compile_first_call_ms": 5965.429308009334,
+    "checked_outputs": 11,
+    "max_absolute_errors": {
+      "tensor": 4.76837158203125e-07,
+      "compiled": 4.76837158203125e-07
+    },
+    "timings": {
+      "dgl": {
+        "median_ms": 7.376829511485994,
+        "p95_ms": 9.18946000165306
+      },
+      "tensor": {
+        "median_ms": 3.617904003476724,
+        "p95_ms": 4.728183525730856
+      },
+      "compiled": {
+        "median_ms": 2.9761814803350717,
+        "p95_ms": 4.710132989566773
+      }
+    }
+  },
+  {
+    "molecule": "cyclosporin",
+    "atoms": 196,
+    "threads": 16,
+    "preparation_ms": 1.7386659746989608,
+    "compile_first_call_ms": 2010.1614330196753,
+    "checked_outputs": 11,
+    "max_absolute_errors": {
+      "tensor": 4.76837158203125e-07,
+      "compiled": 7.152557373046875e-07
+    },
+    "timings": {
+      "dgl": {
+        "median_ms": 23.76430298318155,
+        "p95_ms": 31.17522598186042
+      },
+      "tensor": {
+        "median_ms": 20.88735648430884,
+        "p95_ms": 24.575423981877975
+      },
+      "compiled": {
+        "median_ms": 16.645819996483624,
+        "p95_ms": 19.917302479734644
+      }
+    }
+  },
+  {
+    "molecule": "butane",
+    "atoms": 14,
+    "threads": 16,
+    "preparation_ms": 1.1184439645148814,
+    "compile_first_call_ms": 1530.8880800148472,
+    "checked_outputs": 10,
+    "max_absolute_errors": {
+      "tensor": 2.384185791015625e-07,
+      "compiled": 4.76837158203125e-07
+    },
+    "timings": {
+      "dgl": {
+        "median_ms": 4.378246987471357,
+        "p95_ms": 5.9915539604844525
+      },
+      "tensor": {
+        "median_ms": 1.8005869933404028,
+        "p95_ms": 2.9962090658955267
+      },
+      "compiled": {
+        "median_ms": 1.4461254759225994,
+        "p95_ms": 2.727330062771215
+      }
+    }
+  },
+  {
+    "molecule": "ammonium",
+    "atoms": 5,
+    "threads": 16,
+    "preparation_ms": 1.0590640013106167,
+    "compile_first_call_ms": 695.1491039944813,
+    "checked_outputs": 9,
+    "max_absolute_errors": {
+      "tensor": 0.0,
+      "compiled": 3.5762786865234375e-07
+    },
+    "timings": {
+      "dgl": {
+        "median_ms": 2.8440915048122406,
+        "p95_ms": 4.6562639909097925
+      },
+      "tensor": {
+        "median_ms": 0.6534024723805487,
+        "p95_ms": 0.9975115157430989
+      },
+      "compiled": {
+        "median_ms": 0.5226719658821821,
+        "p95_ms": 0.836909050121903
+      }
+    }
+  }
+]

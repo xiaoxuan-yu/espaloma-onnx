@@ -8,7 +8,7 @@ mkdir -p .benchmark
 curl -L --fail https://github.com/choderalab/espaloma/releases/download/0.3.2/espaloma-0.3.2.pt -o .benchmark/espaloma-0.3.2.pt
 pixi run export
 # Explicit paths, including from another working directory:
-pixi run python scripts/export_model.py --checkpoint /path/to/espaloma-0.3.2.pt --output /path/to/model.onnx
+pixi run export --checkpoint /path/to/espaloma-0.3.2.pt --output /path/to/model.onnx
 ESPALOMA_ONNX_MODEL=.artifacts/model uv run pytest -q
 ```
 

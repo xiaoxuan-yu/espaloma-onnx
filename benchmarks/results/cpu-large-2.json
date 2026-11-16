@@ -1,0 +1,33 @@
+{
+  "molecule": "cyclosporin A",
+  "smiles": "C/C=C/C[C@@H](C)[C@@H](O)[C@H]1C(=O)N[C@@H](CC)C(=O)N(C)CC(=O)N(C)[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@H](C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N(C)[C@@H](C(C)C)C(=O)N1C",
+  "source": "https://www.ebi.ac.uk/chebi/CHEBI:91802",
+  "heavy_atoms": 85,
+  "atoms_including_hydrogens": 196,
+  "graph_nodes": {
+    "g": 1,
+    "n1": 196,
+    "n2": 392,
+    "n3": 734,
+    "n4": 1014,
+    "n4_improper": 144,
+    "nonbonded": 36080,
+    "onefour": 1014
+  },
+  "threads": 2,
+  "interop_threads": 1,
+  "repeats": 200,
+  "torch": "2.1.2",
+  "platform": "Linux-7.3.3-1-cachyos-x86_64-with-glibc2.44",
+  "model_load_ms": 164.66121503617615,
+  "first_graph_build_ms": 245.52140099694952,
+  "first_forward_ms": 72.45198701275513,
+  "additional_10_warmups_ms": 677.628195961006,
+  "median_ms": 68.4328860079404,
+  "p95_ms": 71.22095771483146,
+  "p99_ms": 72.64783830905799,
+  "mean_ms": 68.50635532173328,
+  "sequential_requests_per_second": 14.596841167419475,
+  "finite": true,
+  "scope": "same prebuilt graph; forward only; no concurrency; model load and first graph build measured separately"
+}

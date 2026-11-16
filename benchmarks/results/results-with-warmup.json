@@ -1,0 +1,36 @@
+{
+  "platform": "Linux-7.3.3-1-cachyos-x86_64-with-glibc2.44",
+  "torch": "2.1.2",
+  "dgl": "2.1.0+cu121",
+  "threads": 1,
+  "repeats": 100,
+  "warmup": 10,
+  "scope": "prebuilt caffeine graph forward only; excludes transfers",
+  "results": [
+    {
+      "device": "cpu",
+      "status": "ok",
+      "median_ms": 21.7602095217444,
+      "p95_ms": 23.197666721534915,
+      "mean_ms": 21.907494170591235,
+      "warmup_total_ms": 218.5076429741457,
+      "including_warmup_total_ms": 2409.42462295061,
+      "amortized_ms_per_measured_inference": 24.094246229506098,
+      "tensors_compared": 0
+    },
+    {
+      "device": "cuda",
+      "status": "ok",
+      "median_ms": 3.358114539878443,
+      "p95_ms": 3.9219423255417496,
+      "mean_ms": 3.433705268544145,
+      "warmup_total_ms": 123.70141502469778,
+      "including_warmup_total_ms": 467.61912101646885,
+      "amortized_ms_per_measured_inference": 4.6761912101646885,
+      "tensors_compared": 34
+    }
+  ],
+  "cuda_runtime": "12.1",
+  "torch_package_version": "2.1.2",
+  "gpu": "NVIDIA GeForce RTX 4090"
+}

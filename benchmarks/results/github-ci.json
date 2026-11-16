@@ -1,0 +1,8 @@
+{
+  "commit": "7980fd75b74db5b6b2a153c31cd33aee8150c374",
+  "url": "https://github.com/xiaoxuan-yu/espaloma-onnx/actions/runs/43822986564",
+  "conclusion": "success",
+  "export": "CPU-only checkpoint download, library preparation, dynamic ONNX export and staging passed",
+  "pytest": "6 passed (includes 116 reference cases)",
+  "wheel_sdist_twine": "passed"
+}
