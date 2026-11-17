@@ -255,6 +255,9 @@ hf = [
 modelscope = [
     { name = "modelscope" },
 ]
+openmm = [
+    { name = "openmm" },
+]
 
 [package.dev-dependencies]
 dev = [
@@ -267,9 +270,10 @@ requires-dist = [
     { name = "modelscope", marker = "extra == 'modelscope'", specifier = ">=1.20,<2" },
     { name = "numpy", specifier = ">=1.24,<2" },
     { name = "onnxruntime", specifier = "==1.20.1" },
+    { name = "openmm", marker = "extra == 'openmm'", specifier = ">=8.2,<9" },
     { name = "rdkit", specifier = ">=2024.3,<2025" },
 ]
-provides-extras = ["hf", "modelscope"]
+provides-extras = ["openmm", "hf", "modelscope"]
 
 [package.metadata.requires-dev]
 dev = [{ name = "pytest", specifier = ">=8,<9" }]
@@ -537,6 +541,29 @@ wheels = [
     { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/47/42/2f71f5680834688a9c81becbe5c5bb996fd33eaed5c66ae0606c3b1d6a02/onnxruntime-1.20.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:bb71a814f66517a65628c9e4a2bb530a6edd2cd5d87ffa0af0f6f773a027d99e", size = 13333903, upload-time = "2024-11-21T00:49:12.984Z" },
     { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/c8/f1/aabfdf91d013320aa2fc46cf43c88ca0182860ff15df872b4552254a9680/onnxruntime-1.20.1-cp312-cp312-win32.whl", hash = "sha256:bd386cc9ee5f686ee8a75ba74037750aca55183085bf1941da8efcfe12d5b120", size = 9814562, upload-time = "2024-11-21T00:49:15.453Z" },
     { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/dd/80/76979e0b744307d488c79e41051117634b956612cc731f1028eb17ee7294/onnxruntime-1.20.1-cp312-cp312-win_amd64.whl", hash = "sha256:19c2d843eb074f385e8bbb753a40df780511061a63f9def1b216bf53860223fb", size = 11331482, upload-time = "2024-11-21T00:49:19.412Z" },
+]
+
+[[package]]
+name = "openmm"
+version = "8.6.1"
+source = { registry = "https://mirrors.cernet.edu.cn/pypi/web/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+wheels = [
+    { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/f2/43/2a27507a9d71df6f3d2bdd708b21b20e1720c41d7b72542333a05f329371/openmm-8.6.1-cp310-cp310-macosx_10_12_universal2.whl", hash = "sha256:c446983afafccf8fc31f688e0f5558b5cc38cb3871ef30abc98e565550b32b11", size = 14090734, upload-time = "2026-09-24T19:11:04.407Z" },
+    { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/10/19/c48f55ba5b9d4690829200f6a2ad6392183d8b112f7dd0e51279e5be08fe/openmm-8.6.1-cp310-cp310-macosx_10_12_x86_64.whl", hash = "sha256:40486d34776c22f1fa21f495901429d79ede67bde37899610847c0e8afb8d412", size = 13442906, upload-time = "2026-09-11T21:16:52.206Z" },
+    { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/2e/a1/a803dcb91882720562748ce029e827de80d39657f2a6bf4016289ce27370/openmm-8.6.1-cp310-cp310-manylinux_2_34_aarch64.whl", hash = "sha256:6e9f62b1dc5a52fc4089540ef2203d72ddb8ba3c502965de36c967d4a3136b4f", size = 14013029, upload-time = "2026-09-11T21:14:04.795Z" },
+    { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/e7/86/03805a60a29a2a1b2ebc5c95ffd43639155c15da7f4a2a1f03aa7f568eda/openmm-8.6.1-cp310-cp310-manylinux_2_34_x86_64.whl", hash = "sha256:213d830042252d1bf939f8093de30363611d9e4ed061cbe6191f37dbec4c32f7", size = 14410742, upload-time = "2026-09-11T21:14:09.924Z" },
+    { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/6d/d1/23895aa26eb7ebd24e20eba7e836a5acfe7e6a354249015a0e371c707e43/openmm-8.6.1-cp310-cp310-win_amd64.whl", hash = "sha256:648f43e9b9c414efb1a2010d06fa008aee7de65dd1c3bb0b8f669418a02760de", size = 13164553, upload-time = "2026-09-11T21:14:14.38Z" },
+    { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/a1/e5/d06bdebf0a0a094db6d9bbc9ee0f8712bc2c7f82f22f4a71c82868c73748/openmm-8.6.1-cp311-cp311-macosx_10_12_universal2.whl", hash = "sha256:71d63f310a64b40e00795047aa89081e649cfa8977019959a283147780380f25", size = 14088330, upload-time = "2026-09-24T19:11:09.454Z" },
+    { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/5f/b2/33a6cf1e738322d3b08a055598378582e8b01e0e4bd4f02878157280f6ca/openmm-8.6.1-cp311-cp311-manylinux_2_34_aarch64.whl", hash = "sha256:cfe4b2e8fb5d43f88de03fefb86f2668102f9609fc0162d22e2e79617d949646", size = 13916764, upload-time = "2026-09-11T21:14:18.856Z" },
+    { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/7d/f5/89672e51ea51e07217929daec66775351032b503f52355d5eda0e3231a5b/openmm-8.6.1-cp311-cp311-manylinux_2_34_x86_64.whl", hash = "sha256:e0a6ec580be31d4afba35f290c27c069aaeea9a168b0cf959a0dac0df1d9fd5d", size = 14409788, upload-time = "2026-09-11T21:14:23.395Z" },
+    { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/60/b5/cba53196079369964d1e0f616ba4bca232c71177f133388d24c0a9fca433/openmm-8.6.1-cp311-cp311-win_amd64.whl", hash = "sha256:176a4d1c65a43ce02087e72fdb056437636689aff9f9cab6027b9516934bc87d", size = 13163945, upload-time = "2026-09-11T21:14:28.5Z" },
+    { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/b7/e3/6186297d001c6107d1615f3f8b9b5d06a38de991cfa2fa987467a448e848/openmm-8.6.1-cp312-cp312-macosx_10_12_universal2.whl", hash = "sha256:1ab4a634ae3d0b0784dc5731ae5efb658ec92baf0e4a139c72f6510309791d22", size = 14082674, upload-time = "2026-09-11T21:15:52.676Z" },
+    { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/b7/1a/2ba2706a2cf22bc6142a5688ddc032d908b082aba7d74727b995536587f9/openmm-8.6.1-cp312-cp312-manylinux_2_34_aarch64.whl", hash = "sha256:cbf75e64bc1350857c07c67bad71264fb270a15ed8ee7fa59ba0bd106af32589", size = 13919342, upload-time = "2026-09-11T21:14:32.75Z" },
+    { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/01/09/23fa5df6c710336300d3b69b2b409099612a100f97faed2c13df9adb73a2/openmm-8.6.1-cp312-cp312-manylinux_2_34_x86_64.whl", hash = "sha256:c198fa3a0cb236ab2e8c6405b59ee8acc4ffb6b1a54d001e29c4afb8419e959b", size = 14413848, upload-time = "2026-09-11T21:14:37.362Z" },
+    { url = "https://chinanet.mirrors.ustc.edu.cn/pypi/packages/10/67/174355f48699620920094b94791d8e7a41fff3dcd7c5f9d8fed6d4a8fd88/openmm-8.6.1-cp312-cp312-win_amd64.whl", hash = "sha256:81d2db56d6cfc9d7ade0adc0039020cb995d3606915087fab3563499981e739a", size = 13167407, upload-time = "2026-09-11T21:14:41.858Z" },
 ]
 
 [[package]]

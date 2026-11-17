@@ -18,6 +18,7 @@ Source = "https://github.com/xiaoxuan-yu/espaloma-onnx"
 Issues = "https://github.com/xiaoxuan-yu/espaloma-onnx/issues"
 
 [project.optional-dependencies]
+openmm = ["openmm>=8.2,<9"]
 hf = ["huggingface-hub>=0.24,<2"]
 modelscope = ["modelscope>=1.20,<2"]
 

@@ -19,6 +19,10 @@ class ForceFieldResult:
     def epsilon_kj_mol(self):
         return np.asarray(self.data["atoms"]["epsilon_kj_mol"])
 
+    def to_openmm_system(self, **kwargs):
+        from .openmm_backend import create_system
+        return create_system(self.data, **kwargs)
+
     def to_dict(self):
         return self.data
 
@@ -116,6 +120,6 @@ def create_forcefield(predictor, smiles, *, forcefield="openff_unconstrained-2.1
     data=dict(schema_version=1,forcefield=forcefield,smiles=smiles,
         units=dict(charge="elementary_charge",length="nm",energy="kJ/mol",angle="radian",bond_k="kJ/mol/nm^2",angle_k="kJ/mol/radian^2"),
         functional_forms=dict(bonds="0.5*k*(r-equilibrium)^2",angles="0.5*k*(theta-equilibrium)^2",torsions="k*(1+cos(periodicity*phi-phase))",lj="4*epsilon*((sigma/r)^12-(sigma/r)^6)"),
-        atoms=dict(atomic_numbers=[a.atomic_number for a in molecule.atoms],charge_e=prediction.parameters["n1_q"].flatten().tolist(),sigma_nm=sigma,epsilon_kj_mol=epsilon,vdw_parameter_ids=ids),
+        atoms=dict(mass_da=[float(a.mass.m_as(unit.dalton)) for a in molecule.atoms],atomic_numbers=[a.atomic_number for a in molecule.atoms],charge_e=prediction.parameters["n1_q"].flatten().tolist(),sigma_nm=sigma,epsilon_kj_mol=epsilon,vdw_parameter_ids=ids),
         **terms,constraints=constraints,nonbonded=dict(vdw=vdw,electrostatics=electrostatics,exceptions=exceptions,default_lj_scale=1.,default_coulomb_scale=1.))
     return ForceFieldResult(prediction,data)

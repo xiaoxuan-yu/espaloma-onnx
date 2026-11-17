@@ -19,5 +19,9 @@ jobs:
           uv pip install --python .pixi/envs/fullff/bin/python -e .
       - name: Validate full parameters without OpenMM or training imports
         run: pixi run -e fullff python benchmarks/smoke_full_forcefield.py
+      - name: Validate optional OpenMM wheel backend
+        run: |
+          pixi run -e fullff espaloma-onnx CCO --model .artifacts/model --full-forcefield > .artifacts/ethanol.json
+          uv run --extra openmm python -c 'import json; from espaloma_onnx.openmm_backend import create_system; from openmm import XmlSerializer,Context,VerletIntegrator,Platform; s=create_system(json.load(open(".artifacts/ethanol.json"))); assert s.getNumParticles()==9; s=XmlSerializer.deserialize(XmlSerializer.serialize(s)); i=VerletIntegrator(0.001); c=Context(s,i,Platform.getPlatformByName("Reference")); print("Optional OpenMM CPU backend: PASS")' 
       - run: uv build
       - run: uv run --with twine twine check dist/*

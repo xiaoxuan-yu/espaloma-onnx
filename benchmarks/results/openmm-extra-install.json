@@ -1,0 +1,12 @@
+{
+  "package_version": "0.2.0",
+  "openmm_version": "8.6.1",
+  "optional_extra": "openmm",
+  "cuda_plugins_installed": false,
+  "openff_torch_dgl_installed": false,
+  "ethanol_particles": 9,
+  "xml_round_trip": "pass",
+  "cpu_reference_context": "pass",
+  "periodic_box_validation": "pass",
+  "base_pytest_passed": 8
+}

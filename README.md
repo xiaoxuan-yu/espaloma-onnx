@@ -61,7 +61,7 @@ Both downloaders cache model files locally. Set `cache_dir` to choose the cache 
 
 ## Complete force-field output
 
-With the optional OpenFF base environment, `predict.create_forcefield("CCO")` returns charges, LJ, bonded parameters and nonbonded rules as backend-neutral data. `result.write_json("forcefield.json")` saves the complete parameter set. See [installation and validation](docs/full-forcefield.md). ONNX-only inference remains available through `predict(smiles)`.
+With the optional OpenFF base environment, `predict.create_forcefield("CCO")` returns charges, LJ, bonded parameters and nonbonded rules as backend-neutral data. `result.write_json("forcefield.json")` saves the complete parameter set. See [installation and validation](docs/full-forcefield.md). ONNX-only inference remains available through `predict(smiles)`. Optional `ff.to_openmm_system()` uses the `[openmm]` extra; ordinary JSON output does not import OpenMM.
 
 ## Layout
 

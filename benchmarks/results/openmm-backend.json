@@ -1,0 +1,37 @@
+[
+  {
+    "smiles": "CCO",
+    "status": "pass",
+    "reference_energy_kj_mol": 54.66751019218281,
+    "backend_energy_kj_mol": 54.66751800482645,
+    "max_force_error_kj_mol_nm": 0.007417928584573019
+  },
+  {
+    "smiles": "CCCC",
+    "status": "pass",
+    "reference_energy_kj_mol": 111.35498047327339,
+    "backend_energy_kj_mol": 111.3549014159646,
+    "max_force_error_kj_mol_nm": 0.007987901425622113
+  },
+  {
+    "smiles": "c1ccccc1",
+    "status": "pass",
+    "reference_energy_kj_mol": 172.7151416228836,
+    "backend_energy_kj_mol": 172.7151935500527,
+    "max_force_error_kj_mol_nm": 0.006039803018722978
+  },
+  {
+    "smiles": "CC(=O)[O-]",
+    "status": "pass",
+    "reference_energy_kj_mol": 281.5766008384683,
+    "backend_energy_kj_mol": 281.57672358310987,
+    "max_force_error_kj_mol_nm": 0.003567625027926624
+  },
+  {
+    "smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+    "status": "pass",
+    "reference_energy_kj_mol": 37.2430465980976,
+    "backend_energy_kj_mol": 37.24266152699022,
+    "max_force_error_kj_mol_nm": 0.014848146392523631
+  }
+]
